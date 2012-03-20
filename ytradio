@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+#a YT radio 
+#By MILS
+
+echo "Utilisation ytradio youtube_video_url"
+
+
