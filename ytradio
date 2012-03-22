@@ -1,9 +1,32 @@
 #!/bin/sh
 
-
 #a YT radio 
 #By MILS
+#  V-0.1.1-alphe
 
-echo "Utilisation ytradio youtube_video_url"
+
+menu(){
+cat << EOF
+Utilisation: $0 <arg> 
+-h afficher ce message
+-l <url> lien du video
+-p playlist
+-s lecture aliatoire (implique -p)
+-b lecture en boucle (implique -p)
+EOF
+}
+
+
+#Fonction stream (elle prends en parametre l'url de la vid YT)
+stream(){
+	#todo
+}
+
+#Fonction getvids (elle prends en parametre l'url de la playliste et renvois la liste des vidéos)
+getvids(){
+	#todo
+}
+
+
 
 
