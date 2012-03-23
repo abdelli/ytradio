@@ -9,23 +9,53 @@ menu(){
 cat << EOF
 Utilisation: $0 <arg> 
 -h afficher ce message
--l <url> lien du video
+# -l <url> lien Youtube
 -p playlist
+-v video
 -s lecture aliatoire (implique -p)
--b lecture en boucle (implique -p)
+-b lecture en boucle (implique -v)
 EOF
 }
 
 
-#Fonction stream (elle prends en parametre l'url de la vid YT)
 stream(){
 	#todo
+echo "stream";
 }
 
-#Fonction getvids (elle prends en parametre l'url de la playliste et renvois la liste des vidéos)
 getvids(){
 	#todo
+echo "getvids";
 }
+
+
+while getopts "hvpsb" opt; do
+
+case $opt in
+
+h)menu ;;
+
+v)type="v" ;;
+
+p)type="p" ;;
+
+s)s=0 ;;
+
+b)b=1 ;;
+
+\?)menu ;;
+
+esac
+
+
+done
+
+
+echo $type;
+
+lien=\$$OPTIND;
+
+echo $lien;
 
 
 
